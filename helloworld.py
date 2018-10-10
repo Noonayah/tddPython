@@ -1,7 +1,10 @@
+#Fonction Hello World:
 def hello_world():
     bjr = 'hello world'
     return bjr
 
+
+#Fonction de Calcul de Score selon le nom:
 def calculScore(nom,age):
     if nom == 'Joseph' and age == 15:
         score = '66%'
