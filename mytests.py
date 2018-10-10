@@ -1,12 +1,13 @@
-'''utilisation du module unittest pour faire tous les tests de la fonction hello world'''
+'''utilisation du module unittest pour faire tous les tests'''
 import unittest
 from helloworld import *
 
+#la Classe des tests:
 class MyFirstTests(unittest.TestCase):
-
+    #test de hello world:
     def test_hello(self):
         self.assertEqual(hello_world(),'hello world')
-
+    #tests de calcul score en fonction des nom:
     def test_calculScore_Joseph(self):
         self.assertEqual(calculScore('Joseph',15),'66%')
 
@@ -18,6 +19,6 @@ class MyFirstTests(unittest.TestCase):
 
     def test_calculScore_Ely(self):
         self.assertEqual(calculScore('Ely',28),'75%')
-
+#lancement des tests:
 if __name__=='__main__':
     unittest.main()
